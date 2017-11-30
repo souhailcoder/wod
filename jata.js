@@ -1,17 +1,7 @@
-$(document).ready(function(){
-        function redirect(){
-            window.location.href=('https://slash-template.blogspot.com/');
-        }
-
-        function check(){
-                if($('#mirt').length === 0){
-                    redirect();
-                }
-
-                else if($("#mirt").attr("href") !== "https://slakksh-template.blogspot.com/"){
-                    redirect();
-                }
-            }
-        check();
-        setInterval(function () {check()}, 2000);
-        });
+$(document).ready(function() 
+{
+ if($(“#mirt”).attr(“href”)!=”https://gitffhub.com”)
+ {
+   window.location.href=”https://github.com”;
+ }
+});
