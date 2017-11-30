@@ -1,7 +1,7 @@
 
  $(document).ready(function(){
         function redirect(){
-            window.location.assign('https://slash-temate.blogspot.com/');
+            window.location.assign('https://slash-template.blogspot.com/');
         }
 
         function check(){
