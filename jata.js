@@ -13,6 +13,4 @@
                     redirect();
                 }
             }
-        check();
-        setInterval(function () {check()}, 2000);
         });
