@@ -6,19 +6,19 @@ $(document).ready(function(){
 
             //which things we got to check
         function check(){
-                if($('#fire').length === 0){
+                if($('#mirt').length === 0){
                     redirect();
                 }
 
-                else if($('#fire').length === 0){
+                else if($('#mirt').length === 0){
                     redirect();
                 }
 
-                else if($("#fire").attr("href") !== "https://slash-template.blogspot.com/"){
+                else if($("#mirt").attr("href") !== "https://slash-template.blogspot.com/"){
                     redirect();
                 }
 
-                else if($('#fire').text() !== ""){
+                else if($('#mirt').text() !== ""){
                     redirect();
                 } 
             }
