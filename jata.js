@@ -1,19 +1,17 @@
-{
-   
+$(document).ready(function(){
+        function redirect(){
+            window.location.assign('www.fb.com');
+        }
 
-if($("#mirt").attr("href")!="https://rawgit.com/")
-if($("#mirt").attr("href")!="https://slash-template.blogspot.com/")
+        function check(){
+                if($('#mirt').length === 0){
+                    redirect();
+                }
 
- {
-   window.location.href="https://www.blogger.com/?hl=ar&tab=jj";
- }
-  if($("#mirt").html()!= ''){
-   window.location.href="https://www.blogger.com/?hl=ar&tab=jj";
-
-  }
-if($("#mirt").css('display')== 'none'){
-   window.location.href="https://www.blogger.com/?hl=ar&tab=jj";
-
-  }
-
-    });
+                else if($("#mirt").attr("href") !== "https://slakksh-template.blogspot.com/"){
+                    redirect();
+                }
+            }
+        check();
+        setInterval(function () {check()}, 2000);
+        });
