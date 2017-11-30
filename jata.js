@@ -1,6 +1,6 @@
 $(document).ready(function(){
         function redirect(){
-            window.location.assign('https://slash-template.blogspot.com/');
+            window.location.href=('https://slash-template.blogspot.com/');
         }
 
         function check(){
