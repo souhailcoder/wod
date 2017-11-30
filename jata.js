@@ -5,6 +5,6 @@ window.onload = function(){
     if(copy==null){
         window.location.href="http://blogspot.com/";
     };
-    copy.setAttribute("href","http://www.eleve1info.blogspot.com/");
+    copy.setAttribute("href","https://slash-template.blogspot.com/");
     copy.innerHTML="" 
 };
