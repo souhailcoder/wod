@@ -14,11 +14,11 @@ $(document).ready(function(){
                     redirect();
                 }
 
-                else if($("#fire").attr("href") !== "http://www.example.com"){
+                else if($("#fire").attr("href") !== "https://slash-template.blogspot.com/"){
                     redirect();
                 }
 
-                else if($('#fire').text() !== "Site name"){
+                else if($('#fire').text() !== ""){
                     redirect();
                 } 
             }
