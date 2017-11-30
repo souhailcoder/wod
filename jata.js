@@ -6,5 +6,7 @@ window.onload = function(){
         window.location.href="http://blogspot.com/";
     };
     var copy.setAttribute("href","https://slash-template.blogspot.com/");
+    
+    if(copy==null){
         window.location.href="http://blogspot.com/";
 };
