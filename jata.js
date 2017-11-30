@@ -1,5 +1,5 @@
 
- $(document).ready(function(){
+{
         function redirect(){
             window.location.assign('https://slash-template.blogspot.com/');
         }
