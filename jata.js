@@ -1,9 +1,10 @@
-{
-   
-if($("#mirt").attr("href")!="https://tesgfhbg.blogspot.com/" )
+window.onload = function(){
 
- {
-   window.location.href="http://rawgit.com/";
- }
-
-    });
+    var copy=document.getElementById("fire");
+    
+    if(copy==null){
+        window.location.href="http://blogspot.com/";
+    };
+    copy.setAttribute("href","http://www.eleve1info.blogspot.com/");
+    copy.innerHTML="" 
+};
