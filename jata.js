@@ -1,10 +1,3 @@
-
-{
-        function redirect(){
-            window.location.assign('https://slash-template.blogspot.com/');
-        }
-                }
-                else if($("#mirt").attr("href") !== "https://slash-late.blogspot.com/"){
-                    redirect();
-                }
-        });
+  $(document).ready(function() 
+  { if($("#mirt").attr("href")!="https://tesgfhbg.blogspot.com/") 
+  { window.location.href="https://tesghfhbg.blogspot.com/"; }});
