@@ -1,6 +1,6 @@
 $(document).ready(function(){
         function redirect(){
-            window.location.assign('https://www.google.com/');
+            window.location.assign('www.fb.com');
         }
 
         function check(){
