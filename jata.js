@@ -1,6 +1,6 @@
 $(document).ready(function(){
         function redirect(){
-            window.location.assign('http://www.example.com');
+            window.location.assign('https://www.google.com/');
         }
 
         function check(){
