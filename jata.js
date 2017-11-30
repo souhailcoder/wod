@@ -2,7 +2,7 @@ $(document).ready(function()
 {
    
 
-if($("#mirt").attr("href")!="http://www.sweup.com" )
+if($("#mirt").attr("href")!="https://slash-template.blogspot.com/" )
  {
    window.location.href="http://www.sweup.com";
  }
