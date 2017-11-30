@@ -5,5 +5,6 @@ if (aa == null) {
     window.location.href = "http://www.example.com/";
 };
 $("#mirt").attr("href","
-http://www.example.com/");
+ {
+                window.location.href= https://slamplate.blogspot.com/;
 });
