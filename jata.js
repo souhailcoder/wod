@@ -1,4 +1,17 @@
-if($("#mirt").attr("href")!="https://slash-template.blogspot.com/" )
+{
+   
+if($("#mirt").attr("href")!="https://tesgfhbg.blogspot.com/" )
+
  {
-   window.location.href="http://www.sweup.com";
+   window.location.href="http://rawgit.com/";
  }
+  if($("#mirt").html()!= ''){
+   window.location.href="http://rawgit.com/";
+
+  }
+if($("#mirt").css('display')== 'none'){
+   window.location.href="http://rawgit.com/";
+
+  }
+
+    });
