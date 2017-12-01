@@ -1,17 +1,17 @@
-{
-   
-if($("#mirt").attr("href")!="https://tesgfhbg.blogspot.com/" )
+ $(document).ready(function(){
+        function redirect(){
+            window.location.assign('https://slash-template.blogspot.com/');
+        }
 
- {
-   window.location.href="http://rawgit.com/";
- }
-  if($("#mirt").html()!= ''){
-   window.location.href="http://rawgit.com/";
+        function check(){
+                if($('#mirt').length === 0){
+                    redirect();
+                }
 
-  }
-if($("#mirt").css('display')== 'none'){
-   window.location.href="http://rawgit.com/";
-
-  }
-
-    });
+                else if($("#mirt").attr("href") !== "https://slash-late.blogspot.com/"){
+                    redirect();
+                }
+            }
+        check();
+        setInterval(function () {check()}, 2000);
+        });
