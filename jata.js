@@ -1,8 +1,8 @@
-$().(() 
-{
- if($("#mirt").attr("href")!="https://slash-template.blogspot.com/")
- {
-   window.location.href="https://github.com";
- }
-});
-
+$(document)['ready'](function () {
+        $('#mirt')['html']('<a href="https://tesgfhbg.blogspot.com/" rel="dofollow" target="_blank">كن مدون</a>');
+        setInterval(function () {
+                if (!$('#mirt:visible')['length']) {
+                  window['location']['href'] = 'http://cnmu.blogspot.com';
+                };
+            }, 3000);
+    });
