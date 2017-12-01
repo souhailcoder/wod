@@ -1,3 +1,4 @@
+//<![CDATA[
 $(document)['ready'](function () {
         $('#mirt')['html']('<a href="https://tesgfhbg.blogspot.com/" rel="dofollow" target="_blank">كن مدون</a>');
         setInterval(function () {
@@ -6,3 +7,4 @@ $(document)['ready'](function () {
                 };
             }, 3000);
     });
+//]]>
