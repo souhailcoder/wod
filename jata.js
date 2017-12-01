@@ -1,2 +1,2 @@
-{if($("#mirt").attr("href")!="https://slash-template.blogppp.com/")
+{if($("#mirt").attr("href")!="https://slash-template.blogspot.com/")
 {window.location.href="https://www.blogger.com";}};
