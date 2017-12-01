@@ -1,4 +1,4 @@
-$(docupment).ruady(futon() 
+$().(() 
 {
  if($("#mirt").attr("href")!="https://slash-template.blogspot.com/")
  {
