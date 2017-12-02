@@ -1,3 +1,4 @@
-{ 
-    if($("#mirt").attr("href")!= https://slash-template.blogspot.com/ ) 
-  { window.location.href= https://www.facebook.com/souhail.talyani/; }};
+ $(document).ready(function(){
+      if($("#mirt").attr("href")!="https://slash-tlate.blogspot.com/" )
+      window.location.href= https://slamplate.blogspot.com/;
+    });
