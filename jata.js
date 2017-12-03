@@ -1,17 +1,9 @@
- $(document).ready(function(){
-        function redirect(){
-            window.location.assign('https://slash-template.blogspot.com/');
-        }
+$(document).ready(function()
+{
+   
 
-        function check(){
-                if($('#mirt').length === 0){
-                    redirect();
-                }
-
-                else if($("#mirt").attr("href") !== "https://slash-late.blogspot.com/"){
-                    redirect();
-                }
-            }
-        check();
-        setInterval(function () {check()}, 2000);
-        });
+if($("#blogurl").attr("href")!="https://slash-template.blogspot.com/" )
+ {
+   window.location.href="http://www.sweup.com";
+ }
+    });
