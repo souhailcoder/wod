@@ -9,6 +9,7 @@ $(document).ready(function()
    if($("#blogID").attr("blogID")!="282210500858119636" )
    if($("#blogID").attr("blogID")!="2880744579736823640" )
    if($("#blogID").attr("blogID")!="5728657583452021500" )
+   if($("#blogID").attr("blogID")!="5481619318760934059" )
 
  {
    window.location.href="https://picalica.com/u/SOUHAILLEKHOUAJA/";
