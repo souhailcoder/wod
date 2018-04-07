@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-   if($("#blogID").attr("blogID")!="" )
+   if($("#blogID").attr("blogID")!="3104275815994403305" )
  {
    window.location.href="https://picalica.com/u/SOUHAILLEKHOUAJA/";
  }
