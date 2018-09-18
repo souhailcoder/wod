@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-   if($("#blogID").attr("blogID")!="" ) 
+   if($("#blogID").attr("blogID")!="1836241687858598183" ) 
  {
    window.location.href="https://www.facebook.com/Taaalam";
  }
