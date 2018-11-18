@@ -1,3 +1,13 @@
+
+$(document).ready(function()
+{
+   if($("#blogID").attr("blogID")!="5665035980445381266" ) 
+ {
+   window.location.href="https://www.facebook.com/Taaalam";
+ }
+    });
+
+
 // SmoothScroll for websites v1.2.1
 // Licensed under the terms of the MIT license.
 
