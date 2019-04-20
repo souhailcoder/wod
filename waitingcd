@@ -1,0 +1,92 @@
+<div dir="rtl" style="text-align: right;" trbidi="on">
+<div dir="rtl" style="text-align: right;" trbidi="on">
+<div dir="ltr" style="text-align: center;" trbidi="on">
+<style type="text/css">
+a#reload {display: none;}
+#redirection {background: #eee;
+    border-radius: 50px;
+    padding: 14px;
+    font-size: 21px;
+    color: #666;
+}
+
+</style>
+<!-- ads1 -->
+<!-- ads1 -->
+
+<!--text -->
+<!--text -->
+<!-- 2 ads -->
+<img alt="" src="https://3.bp.blogspot.com/-5DFcLCBxQ2I/Wu43D0hPhNI/AAAAAAAAA4U/v3_ba_R2ob8UAbKtTIk5XOG_vlZUy0TggCK4BGAYYCw/s1600/ads350%25C3%2597250.jpg" />
+<!--2 ads -->
+<br />
+<div id="redirection">
+الرجاء الانتظار جاري تحويلك للرابط المطلوب <span id="countdown"> 15 </span> 
+<i class="fa fa-spinner fa-spin" style="color: #22de76; font-size: 45px;"></i>
+<a href="https://www.blogger.com/blogger.g?blogID=7843671873530612631#" id="reload"></a>
+ </div>
+<br />
+<!-- text -->
+<!-- text -->
+
+<!-- ads -->
+<img alt="" src="https://3.bp.blogspot.com/-5DFcLCBxQ2I/Wu43D0hPhNI/AAAAAAAAA4U/v3_ba_R2ob8UAbKtTIk5XOG_vlZUy0TggCK4BGAYYCw/s1600/ads350%25C3%2597250.jpg" />
+<!-- ads -->
+
+<!-- text --><b>
+<!-- text -->
+</b></div>
+</div>
+<script type="text/javascript">//<![CDATA[
+//add Font Awesome
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+//]]></script> 
+
+<script type="text/javascript">
+  var seconds;
+  var temp;
+function removem1() {
+    var xkl = getQueryVariable("url");
+    var nkl=xkl.replace("&m=1", "");
+document.getElementById("reload").innerHTML=nkl;
+}
+removem1();
+document.getElementById('reload').href=window.location.href;
+function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("?&&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=_");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+}
+
+  function countdown() {
+    seconds = document.getElementById('countdown').innerHTML;
+    seconds = parseInt(seconds, 10);
+
+    if (seconds == 0) {
+      temp = document.getElementById('countdown');
+      parent.location.replace(document.getElementById("reload").innerHTML)
+           return;
+    }
+    seconds--;
+    temp = document.getElementById('countdown');
+    temp.innerHTML = seconds;
+    timeoutMyOswego = setTimeout(countdown, 1500);
+  } 
+setTimeout(function(){ countdown(); }, 5000);
+</script>
+
+
+</div>
