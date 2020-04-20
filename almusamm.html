@@ -1,0 +1,353 @@
+<link href='https://raw.githack.com/mongezplus/css/master/bootstrap.min.css' rel='stylesheet'/>
+<link href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css' rel='stylesheet'/>
+<link href='https://raw.githack.com/mongezplus/css/master/animate.css' rel='stylesheet'/>
+<link href='https://fonts.googleapis.com/css?family=Cairo&display=swap' rel='stylesheet'/>
+
+<style amp-custom="amp-custom">
+/*<![CDATA[*/
+
+
+/*-------------------- font --------------------*/
+
+@font-face {
+    font-family: "Ta3alamFont";
+    font-weight: normal;
+    font-style: normal;
+    src: url(https://dl.dropboxusercontent.com/s/l0mqm6g2vwflxp2/Ta3alamFont.eot);
+    src: url(https://dl.dropboxusercontent.com/s/l0mqm6g2vwflxp2/Ta3alamFont.eot?#iefix) format('embedded-opentype'), url(https://dl.dropboxusercontent.com/s/gjkkuvnfze5ii1l/Ta3alamFont.woff) format('woff'), url(https://dl.dropboxusercontent.com/s/mjj8mvkq7jgihhn/Ta3alamFont.ttf) format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0
+}
+
+#ss-form input:focus ~ label,
+#ss-form textarea:focus ~ label,
+#ss-form input:valid ~ label,
+#ss-form textarea:valid ~ label {
+    font-size: 10px;
+    color: #4d90fe;
+    top: -10px;
+    -webkit-transition: all 0.125s ease;
+    transition: all 0.125s ease;
+}
+
+#ss-form .styled-input {
+    width: 46.333%;
+    margin: 5px 0px;
+    padding: 0;
+    position: relative;
+    float: right;
+    margin-left: 20px;
+}
+
+#ss-form .styled-input-in {
+    position: relative;
+}
+
+#ss-form .styled-input label {
+    color: #999;
+    padding: 1rem;
+    position: absolute;
+    top: 4px;
+    right: 3px;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+    line-height: 1;
+    font-family: Ta3alamFont;
+    font-size: 13px;
+}
+
+#ss-form .styled-input.wide {
+    width: 96%;
+}
+
+#ss-form input,
+#ss-form textarea {
+    border-radius: 2px;
+    padding: 12px 15px;
+    border: 1px solid #cad3df;
+    width: 100%;
+    font-size: 1rem;
+    background: #ffffff;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Ta3alamFont;
+}
+
+#ss-form input ~ .span1,
+#ss-form textarea ~ .span1 {
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #4d90fe;
+    position: absolute;
+    left: 49%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#ss-form input ~ .span2,
+#ss-form textarea ~ .span2 {
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #4d90fe;
+    position: absolute;
+    right: 49%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#ss-form input ~ span {
+    bottom: 0;
+}
+
+#ss-form input:focus,
+#ss-form textarea:focus {
+    outline: 0;
+}
+
+#ss-form input:focus ~ .span1,
+#ss-form textarea:focus ~ .span1,
+#ss-form input:focus ~ .span2,
+#ss-form textarea:focus ~ .span2 {
+    width: 50%;
+}
+
+#ss-form textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+#ss-form .btn {
+    font-family: Ta3alamFont;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    padding: 0 25px;
+    height: 52px;
+    line-height: 50px;
+    color: #FFF;
+    background-color: #543c8a;
+    border: 1px solid #fff;
+    cursor: pointer;
+    margin: 10px 0 0;
+    background-image: none;
+    float: right;
+    width: 96%;
+}
+
+#ss-form .btn-default:hover,
+#ss-form .btn-default:focus {
+    background-color: #4d90fe;
+    color: white;
+    outline: 0;
+}
+
+#fade {
+    opacity: 0;
+    display: none;
+}
+
+.thanks_layout {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(255, 255, 255, .8);
+    z-index: 99999
+}
+
+.thanks_message {
+    font-family: Ta3alamFont;
+    width: 50%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #DEDEDE;
+    text-align: center;
+    color: #333;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -25%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.thanks_message .close a {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    color: #333;
+    font-family: Ta3alamFont;
+    font-size: 18px;
+    text-decoration: none
+}
+
+@media screen and (max-width:768px) {
+    .thanks_message {
+        width: 90%!important;
+        margin-left: -45%!important;
+    }
+}
+
+@media screen and (max-width:414px) {
+    #ss-form .styled-input {
+        width: 100%;
+    }
+}
+.icon-user:before {
+    content: "\f007";
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    text-decoration: inherit;
+    display: inline-block;
+    speak: none;
+}
+.mp-input-icon {
+    width: 40px !important;
+    margin: 14px 5px 0 0;
+    padding: 10px;
+    color: #888;
+    border-left: 1px solid #eee;
+    font-size: 18px;
+}
+</style>
+ <script type="text/javascript"> var submitted=false;
+var fadeEffect=function() {
+    return {
+        init:function(id, flag, target) {
+            this.elem=document.getElementById(id);
+            clearInterval(this.elem.si);
+            this.target=target ? target: flag ? 100: 0;
+            this.flag=flag || -1;
+            this.alpha=this.elem.style.opacity ? parseFloat(this.elem.style.opacity) * 100: 0;
+            this.elem.si=setInterval(function() {
+                fadeEffect.tween()
+            }
+            , 20);
+        }
+        ,
+        tween:function() {
+            if(this.alpha==this.target) {
+                clearInterval(this.elem.si);
+            }
+            else {
+                var value=Math.round(this.alpha + ((this.target - this.alpha) * .05)) + (1 * this.flag);
+                this.elem.style.opacity=value / 100;
+                this.elem.style.filter='alpha(opacity=' + value + ')';
+                this.alpha=value
+            }
+        }
+    }
+}
+
+();
+function myFunction() {
+    location.reload();
+}
+
+</script> 
+<iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){);}" style="display: none;"></iframe> 
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSeJ6MHDNBipX3cydefXOGIk8UYvqSfDmVdwX75KMHUUqZV7wQ/formResponse" id="ss-form" method="POST" onsubmit="fadeEffect.init('fade', 1);document.getElementById('fade').style.display = 'block'" target="hidden_iframe">
+    
+<div class="styled-input">
+<div class="styled-input-in">
+            <fieldset>
+            الاسم :
+             <br />
+            <div class="form-group has-feedback">
+                <input autocomplete="off" class="form-control" id="i.desc.1099911720" name="entry.483682009" required="required" title="" type="text" value="" placeholder="ادخل اسمك بشكل صحيح" />
+                <span class="icon-user form-control-feedback mp-input-icon"></span>
+                 </div>
+            </fieldset>
+</div></div>
+    
+<div class="styled-input">
+<div class="styled-input-in">
+                <fieldset>
+                البريد الإلكتروني:
+                                      <br />
+                <div class="form-group has-feedback">
+                    <input autocomplete="off" class="form-control" id="i.desc.114753645" name="entry.1625329142" required="required" title="من فضلك أدخل بريد إلكتروني صحيح" type="email" value=""  placeholder="ادخل بريد إلكتروني صالح" />
+                    <span class="icon-envelope form-control-feedback mp-input-icon"></span>
+                                      </div>
+                </fieldset>
+</div></div>
+            
+<div class="styled-input">
+<div class="styled-input-in">
+            <fieldset>
+            مكان الإقامة:
+                                  <br />
+        <div class="form-group  has-feedback">
+        <input autocomplete="off" class="form-control"  id="i.desc.1413869633" name="entry.1010552939" title="" type="text" value="" placeholder="مكان الإقامة (الدولة)"/>
+        <span class="icon-map-marker form-control-feedback mp-input-icon"></span>
+    </div>
+    </fieldset>
+</div></div>
+
+<div class="styled-input">
+<div class="styled-input-in">
+    <fieldset>
+        رقم الهاتف (مرفوق بالرمز الدولي)
+                          <br />
+<div class="form-group  has-feedback">
+    <input autocomplete="off" class="form-control"  id="i.desc.1050591571" name="entry.449051441" required="" type="text" value="" />
+    <span class="icon-phone form-control-feedback mp-input-icon"></span>
+</div>
+</fieldset>
+</div></div>
+
+<div class="styled-input">
+<div class="styled-input-in">
+    <fieldset>
+        رابط موقع الشركة : (إن وجد)
+                          <br />
+<div class="form-group  has-feedback">
+   <input autocomplete="off" class="form-control" id="i.desc.1888178778" name="entry.1993356877"  required="" type="text" value="" />
+    <span class="icon-globe form-control-feedback mp-input-icon"></span>
+</div>
+</fieldset>
+</div></div>
+    
+<div class="styled-input">
+<div class="styled-input-in">
+    <fieldset>
+        الرسالة:
+                                  <br />
+<div class="form-group  has-feedback">
+    <textarea cols="25" class="form-control" id="i.desc.70864395" name="entry.1478053869" required=""></textarea>
+    <span class="icon-globe form-control-feedback mp-input-icon"></span>
+</div>
+</fieldset>
+</div></div>
+
+<input name="draftResponse" type="hidden" value="[null,null," -7864039421349239579 "]" /> <input name="pageHistory" type="hidden" value="0" /> <input name="fbzx" type="hidden" value="-7864039421349239579" /> <button class="btn btn-default" name="submit"
+        type="submit">إرسال</button> 
+</form>
+<div id="fade">
+    <div class="thanks_layout">
+        <div class="thanks_message"> <img alt="Thumb" height="48" src="http://1.bp.blogspot.com/-ifYrQPpVoEY/XA-yhUcimSI/AAAAAAAACXc/CuZaH78INYAkAIm08ZTbHkEpUCDHoFXxwCK4BGAYYCw/s1600/thumbs-up%2B%25281%2529.png" width="48" />
+            <h2> تم ارسال الرسالة بنجاح</h2>
+            <div> سيتم الرد عليك في أقرب وقت ممكن</div>
+            <div class="close"> <a href="javascript:void(0)" onclick="document.getElementById('fade').style.display = 'none' ;myFunction()" title="Close">×</a></div>
+        </div>
+    </div>
+</div>
