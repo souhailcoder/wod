@@ -55,8 +55,7 @@
 .mkdf-vertical-showcase .mkdf-vs-frame-holder {
     position: absolute;
     z-index: 1534;
-    top: 44% !important;
-    left: 36% !important;
+    top: 43% !important;
     transform: translate(-50%,-50%);
     -webkit-transition: 1.2s .3s cubic-bezier(1,.12,.25,1);
     -moz-transition: 1.2s .3s cubic-bezier(1,.12,.25,1);
