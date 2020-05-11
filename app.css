@@ -5,10 +5,6 @@
 
 
 @media screen and (max-width: 600px) {
-.mkdf-vertical-showcase .mkdf-vs-frame-holder {
-    top: 50% ;
-    left: 50% ;
-}
 .mkdf-vertical-showcase .mkdf-vs-frame-info .mkdf-vs-frame-info-top {
     transform: translate(-18.5vw,-30vh);
     width: 306px !important;
