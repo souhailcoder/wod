@@ -76,3 +76,5 @@
     height: 97%;
 }
 }
+
+html {overflow-y: hidden!important;}
