@@ -1,0 +1,334 @@
+
+
+<style>
+.musamm-nav-btn {
+    display: none;
+}
+@media only screen and (max-width: 768px)  {
+#botmenu {
+    display: none !important;
+}
+.musamm-nav-btn {
+    display: block !important;
+}
+#search {
+    padding: 0px 0px;
+    margin: 13px 30px 10px 0px;
+    display: inline-block;
+    height: 30px;
+    background: #000;
+    float: right;
+    width: 202px;
+}
+}
+.musamm-text {
+	text-transform: uppercase;
+}
+
+.musamm-nav-btn {
+    border: 2px solid #580303;
+    background: #d80f00;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+
+.musamm-open-btn {
+    padding: 11px 11px;
+}
+
+.musamm-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	transform: translateX(-100%);
+	transition: transform .3s ease-in-out; 
+}
+
+.musamm-nav.visible {
+	transform: translateX(0);
+}
+
+.musamm-nav-black {
+	background-color: rgb(34, 31, 31);
+	width: 60%;
+	max-width: 480px;
+	min-width: 320px;
+	transition-delay: .4s;
+    z-index: 999;
+}
+
+.musamm-nav-black.visible {
+	transition-delay: 0s;
+}
+
+.musamm-nav-red {
+	background-color: rgb(229, 9, 20);
+	transition-delay: .2s; 
+	width: 95%; 
+}
+
+.musamm-nav-red.visible {
+	transition-delay: .2s;
+}
+
+.musamm-nav-white {
+	background-color: #fff;
+	padding: 40px;
+	position: relative;
+	transition-delay: 0s; 
+	width: 95%;
+}
+
+.musamm-nav-white.visible {
+	transition-delay: .4s;
+}
+
+.musamm-close-btn {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    background: #98322e;
+    color: #fff;
+    padding: 5px 9px;
+    border-radius: 20px;
+}
+
+.musamm-logo {
+	width: 150px;
+}
+
+.musamm-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.musamm-list li {
+	margin: 20px 0;
+}
+
+.musamm-list li a {
+	color: rgb(34, 31, 31);
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.musamm-list ul {
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+
+/* Social Panel Styles */
+.social-panel-container {
+	position: fixed;
+	right: 0;
+	bottom: 80px;
+	transform: translateX(100%);
+	transition: transform 0.4s ease-in-out;
+}
+
+.social-panel-container.visible {
+	transform: translateX(-10px);
+}
+
+.social-panel {	
+	border-radius: 16px;
+	box-shadow: 0 16px 31px -17px rgba(0,31,97,0.6);
+	border: 5px solid #001F61;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: &#39;Muli&#39;;
+	position: relative;
+	height: 169px;	
+	width: 370px;
+	max-width: calc(100% - 10px);
+}
+
+.social-panel button.close-btn {
+	border: 0;
+	color: #97A5CE;
+	cursor: pointer;
+	font-size: 20px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.social-panel button.close-btn:focus {
+	outline: none;
+}
+
+.social-panel p {
+	background-color: #001F61;
+	border-radius: 0 0 10px 10px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 2px 17px 6px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin: 0;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 235px;
+}
+
+.social-panel p i {
+	margin: 0 5px;
+}
+
+.social-panel p a {
+	color: #FF7500;
+	text-decoration: none;
+}
+
+.social-panel h4 {
+	margin: 20px 0;
+	color: #97A5CE;	
+	font-family: &#39;Muli&#39;;	
+	font-size: 14px;	
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.social-panel ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.social-panel ul li {
+	margin: 0 10px;
+}
+
+.social-panel ul li a {
+	border: 1px solid #DCE1F2;
+	border-radius: 50%;
+	color: #001F61;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+	text-decoration: none;
+}
+
+.social-panel ul li a:hover {
+	border-color: #FF6A00;
+	box-shadow: 0 9px 12px -9px #FF6A00;
+}
+
+.floating-btn {
+	border-radius: 26.5px;
+	background-color: #001F61;
+	border: 1px solid #001F61;
+	box-shadow: 0 16px 22px -17px #03153B;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 12px 20px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+}
+
+.floating-btn:hover {
+	background-color: #ffffff;
+	color: #001F61;
+}
+
+.floating-btn:focus {
+	outline: none;
+}
+
+@media screen and (max-width: 480px) {
+
+	.social-panel-container.visible {
+		transform: translateX(0px);
+	}
+	
+	.floating-btn {
+		right: 10px;
+	}
+}
+</style>
+
+
+<button class='musamm-nav-btn musamm-open-btn'>
+	<span style=''>&#9776;</span>
+</button>
+<div class='musamm-nav musamm-nav-black'>
+	<div class='musamm-nav musamm-nav-red'>
+		<div class='musamm-nav musamm-nav-white'>
+			
+			<button class='musamm-nav-btn musamm-close-btn'><span style=''>X</span></button>
+			
+			<img alt='musamm Logo' class='musamm-logo' src='https://i.imgur.com/3YSKldC.png'/>
+			
+			<ul class='musamm-list'>
+				<li><a href='http://grandebiblio.com/search/label/Math%C3%A9matique'>Mathématique</a></li>
+				<li><a href='http://grandebiblio.com/search/label/Informatique'>Informatique</a></li>
+				<li><a href='http://grandebiblio.com/search/label/economie'>Economie</a></li>
+				<li><a href='/search/label/Physique'>Physique</a></li>
+				<li><a href='/search/label/Chimie'>Chimie</a></li>
+				<li><a href='/search/label/Médecine'>Médecine</a></li>
+				<li><a href='/search/label/Physique'>Biologie</a></li>
+				<li><a href='/search/label/Langues'>Langues</a></li>
+				<li>
+					<ul>
+						<li><a href='/search/label/Français'>Français</a></li>
+						<li><a href='/search/label/Anglais'>Anglais</a></li>
+						<li><a href='/search/label/Arabe'>Arabe</a></li>
+					</ul>
+				</li>
+				<li><a href='/search/label/RH'>RH</a></li>
+				<li><a href='https://grandebiblio.com/p/privacy-policy.html'>Privacy Policy</a></li>
+				<li><a href='https://grandebiblio.com/p/dmca.html'>DMCA</a></li>
+
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+<script type='text/javascript'>
+//<![CDATA[
+
+const musamm_open_btn = document.querySelector('.musamm-open-btn');
+const musamm_close_btn = document.querySelector('.musamm-close-btn');
+const musamm_nav = document.querySelectorAll('.musamm-nav');
+
+musamm_open_btn.addEventListener('click', () => {
+	musamm_nav.forEach(nav_el => { nav_el.classList.add('visible') });
+});
+
+musamm_close_btn.addEventListener('click', () => {
+	musamm_nav.forEach(nav_el => { nav_el.classList.remove('visible') });
+});
+
+// GET IN TOUCH COMPONENT
+const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});
+//]]>
+</script>
