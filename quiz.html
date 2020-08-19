@@ -1,0 +1,105 @@
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+
+<style>
+        .container{box-shadow: 0 5px 10px 0 rgb(36, 41, 46); border-radius: 15px;;display:flex;align-items:center;justify-content:center;background:#24292e;padding:3rem 2rem;margin:2em 0;}
+        #quiz1{background:#fff;border-radius:10px;padding:2rem;border:1px solid rgba(0,0,0,.2);min-width:550px;}
+        #quiz1 img{max-width:100px;}
+        .quiz button,.quiz .quizQuestions ul.questionAnswers li,.quiz .quizResults li{border-radius:2px}
+        @media screen and (max-width:768px){
+        #quiz1{min-width:unset!important}}
+        /* PLUGIN DEFAULT STYLES */
+        .quiz{position:relative}
+        .quiz ul{margin:0;padding:0;list-style:none}
+        .quiz .hidden{display:none}
+        .quiz button{width: 100%; height: 55px; background: #24292e; border: none; border-radius: 5px; font-size: 22px; font-weight: 500; color: #fff; margin-top: 20px; cursor: pointer;}
+        @media screen and(min-width:640px){.quiz button{width:auto}}
+        .quiz button:hover{background:#3e77da}
+        .quiz .quizQuestions{margin-bottom:10px}
+        .quiz .quizQuestions>li{display:none;position:relative}
+        .quiz .quizQuestions>li.showQuestion{display:block}
+        .quiz .quizQuestions>li.disabled .questionAnswers li:hover:not(.selectedAnswer){background:initial}
+        .quiz .quizQuestions>li.disabled .questionAnswers li label,.quiz .quizQuestions>li.disabled .questionAnswers li input[type=radio]{cursor:default}
+        .quiz .quizQuestions>li .questionCount{font-size:14px}
+        .quiz .quizQuestions>li .questionTitle{margin:0;padding:20px 0}
+        .quiz .quizQuestions ul.questionAnswers{overflow:hidden}
+        .quiz .quizQuestions ul.questionAnswers li{margin-top:5px;border:1px solid #e2e2e2}
+        .quiz .quizQuestions ul.questionAnswers li:first-child{margin:0}
+        .quiz .quizQuestions ul.questionAnswers li:hover{background:#ededed}
+        .quiz .quizQuestions ul.questionAnswers li.selectedAnswer{background:#4789fb;color:#fff}
+        .quiz .quizQuestions ul.questionAnswers li.incorrectAnswer{background:#f02d3a;color:#fff}
+        .quiz .quizQuestions ul.questionAnswers li.correctAnswer{background:#24292e;color:#fff}
+        .quiz .quizQuestions ul.questionAnswers label,.quiz .quizQuestions ul.questionAnswers input[type=radio]{cursor:pointer}
+    .quiz .quizQuestions ul.questionAnswers input[type=radio]{margin:0;margin-right:10px;margin-left:10px;vertical-align:middle}
+        .quiz .quizQuestions ul.questionAnswers label{display:inline-block;padding:13px;width:100%}
+        .quiz .quizQuestions {direction: rtl;}
+        .quiz .quizControls{margin-top:10px}
+        .quiz .quizControls button{display:block}
+        @media screen and(min-width:640px){.quiz .quizControls button{display:initial;margin-right:5px}}
+        .quiz .quizControls button.ctrlPrev{background:#224178}
+        .quiz .quizControls button.ctrlPrev:hover{background:#2f5ba7}
+        .quiz .quizControls button.ctrlDone{display:none}
+        .quiz .quizControls button.ctrlNext,.quiz .quizControls button.ctrlDone{float:right;background:#24292e}
+        .quiz .quizControls button.ctrlNext:hover,.quiz .quizControls button.ctrlDone:hover{background:#434a52}
+        .quiz .quizControls button.ctrlSkip{background:#9b59b6}
+        .quiz .quizControls button.ctrlSkip:hover{background:#874d9e}
+        .quiz .quizControls button.disabled{cursor:not-allowed;background:#e2e2e2}
+        .quiz .quizControls button.disabled:hover{background:#e2e2e2}
+        .quiz .quizResults ul{margin:20px 0 10px}
+        .quiz .quizResults li{background: #fff; border-radius: .8rem; padding: 1.5rem; position: relative; width: 100%;list-style: none; margin: 2rem auto 0; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);}
+        @media screen and(min-width:640px){.quiz .quizResults li{padding-left:20px}}
+        .quiz .quizResults .viewResults{background:#24292e}
+        .quiz .quizResults .viewResults:hover{background:#26aa5e}
+        .quiz .quizResults .questionTitle{margin:5px 0 10px 10px}
+        .quiz .quizResults .answeredCorrect{border-top: 5px solid #b2d9b4;}
+        .quiz .quizResults .answeredWrong{border-top: 5px solid #ecb9c1;}
+        </style>
+        <div class="container">
+            <div id="quiz1"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/gh/imintweb/Js@master/quiz.js"></script>
+        <script type="text/javascript">
+                    $("#quiz1").dlxQuiz({
+                        quizData: {
+                            questions: [
+                                {
+                                    q: 'كم عدد أحرف اللغة الإنجليزية&#1567;', //السؤال
+                                    a: "26", //الاجابة
+                                    options: [ // خيارات الإجابة المعروضة (يمكن أن تكون أكثر من 2)
+                                   // تأكد من وجود الإجابات ومن نفس الإجابات في الخيارات المتعددة
+                                    // لا تنس&#1614; إضافة فاصلة (&#1548;) في نهاية كل أجابه&#1548; لا يلزم إضافتها في الخيار الأخير
+                                        "22",
+                                        "26",
+                                        '28'
+                                    ]
+                                },
+                                { //السؤال مع إجابات للصور
+                                    q: "ما هو علم دولة المانية &#1567;",
+                                    a: "<img src='https://discord.com/assets/7fa2adf98f26db34178bb30a63dabe8c.png'/>",
+                                    options: [
+                                     "<img src='https://discord.com/assets/10bb7b2e55f0a34f23d903121de6b9bc.png'/>",
+                                        "<img src='https://discord.com/assets/7fa2adf98f26db34178bb30a63dabe8c.png'/>",
+                                        "<img src='https://discord.com/assets/3590df6f2ae2f7202dab15c0bd3aca9a.png'/>"
+                                    ]
+                                },
+                                { //السؤال بإجابة قصيرة
+                                    q: "ما هو الحيوان الأثقل وزنا&#1611; في العالم&#1567;",
+                                    a: "الحوت الأزرق",
+                                    options: ["الفيل", "الزرافة","الحوت الأزرق"]
+                                },
+                                {
+                                    q: "هل CSS لغة برمجة&#1567;",
+                                    a: "لا",
+                                    options: ["نعم", "لا", "ربما"]
+                                },
+                                { // بالنسبة للسؤال الأخير &#1548; لا يلزم إعطاء فاصلة (&#1548;) في نهاية الكود
+                                    q: "أي من كواكب المجموعة الشمسية يطلق عليه اسم الكوكب الأحمر&#1567;",
+                                    a: "المريخ",
+                                    options: ["المريخ", "عطارد","الزهرة","بلوتو"]
+                                }
+                    
+                            ]
+                        }
+                    });
+        </script>
