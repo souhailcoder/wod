@@ -79,6 +79,10 @@ $(function () {
                                     (n = s.substring(8, 10)),
                                     '<span class="post-date">' + monthFormat[parseInt(l, 10) - 1] + " " + n + ", " + i + "</span>"),
                                 g = (void 0, (e = r[c].content.$t), '<p class="post-snippet">' + $("<div>").html(e).text().trim().substr(0, 86) + "…</p>"),
+                                z = '<div class="jump-link"> <a href="' +
+                                      m +
+                                      '">عرض المزيد</a></div>',
+
                                 v = "";
                             w.match("mega-menu")
                                 ? (v +=
@@ -231,6 +235,7 @@ $(function () {
                                       u +
                                       "</div>" +
                                       g +
+                                      z +
                                       "</div></div></li>")
                                 : w.match("post-list")
                                 ? (v += '<li class="item-' + c + '"><a class="post-image-link" href="' + m + '">' + d[2] + '</a><h2 class="post-title">' + h + '</h2><div class="post-meta">' + u + "</div></div></li>")
