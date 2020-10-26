@@ -3,9 +3,11 @@ $(document).ready(function()
    if($("#blogID").attr("blogID")!="2406146568926136424" )
    if($("#blogID").attr("blogID")!="4607266312329895887" )
    if($("#blogID").attr("blogID")!="6571443070991287622" )
+   if($("#blogID").attr("blogID")!="4797139134980255962" )
+      
 
  {
-   window.location.href="https://fb.com/taaalam";
+   window.location.href="https://www.almusamm.com";
  }
     });
 
