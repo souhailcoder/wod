@@ -1,0 +1,110 @@
+ .addyr{
+    display: table;
+    width: 100%;
+    text-align: center;
+    margin-top: 19px;    clear: both;
+}
+.addyr a {
+    margin-top: 19px;
+    background: #8bc34a;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.btn {
+    background-color: #db391d;
+    border: 1px solid #db391d;
+    border-radius: 999px;
+    box-shadow: 0 5px 10px #f9c6bd;
+  border: none;
+  color: white;
+  padding: 12px 30px;    margin-bottom: 29px;
+  cursor: pointer;
+  font-size: 20px;    width: max-content;
+}
+  .btn a {
+margin-right: 10px;
+    font-size: 18px;color: #fff;
+}
+.center { text-align:center }
+.loading { display:inline-block; width:82px; height:9px; background:transparent url(&#39;//3.bp.blogspot.com/-_rTeok0JZX0/VsBoPf-EZtI/AAAAAAAAKEU/i9fUsYUOYJY/s1600/loading.gif&#39;) no-repeat 0 0 }
+a.download:hover{background:#666}
+a.download:after{ content: &#39;\f019&#39;; background: rgba(0,0,0,0.1); position: absolute; right: 0; top: 0; font-weight: normal; display: inline-block; margin: 0 0 0 10px; color: #fff; padding: 16px 15px; font-family: fontawesome; transition: all .3s; }
+a.download{background-color:#2C64B4; display: inline-block; color: #FFF; text-decoration: none; text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); box-shadow: 0px -3px 0px rgba(0, 0, 0, 0.1) inset, 0px 3px 0px rgba(0, 0, 0, 0.1); border-radius: 5px; position: relative; line-height: normal; transition: all .3s; max-width: 170px; padding: 10px 50px 10px 15px; margin: 0 0 10px;}
+a.download:active{position:relative;top:2px;  box-shadow:inset 0px -1px 0px rgba(0,0,0,0.1), 0px 2px 0px rgba(0,0,0,0.1);}
+#download-count{font:bold 12px tahoma}
+#download-count span{color:#289728}
+.almusamm {
+    background: #fff;
+    overflow: hidden;
+    padding: 30px;
+}
+.service-icon img {
+    width: 50%;    float: left; 
+}
+  .bworks-tiles span {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 35px;
+}
+._v7o1do {
+    font-size: 18px;
+}
+._1257vl7 {
+    width: 18px;
+}
+._1257vl7 {
+    margin: auto 0;
+    width: 14px;
+}
+._v7o1do {
+    color: #1977d6;
+    display: inline-block;
+    font-size: 14px;
+    margin: auto 5px;
+}
+._11ur6k6 {
+    height: 23px;
+    width: 20px;
+}
+.ias_trigger {
+    clear: both;
+    text-align: center;
+}
+.almusamm-img {
+    float: left;    width: 48%;
+}
+.almusamm-com {
+    float: right;    width: 48%;
+
+}
+.ias_trigger a:hover {
+    background: #25598d;
+}
+.ias_trigger a {
+    padding: 10px 14px;
+    color: #fff;
+    background: #78368d;
+    border-radius: 50px;
+    margin: 30px 0px;
+    display: inline-block;
+    min-width: 199px;
+        background-color: #db391d;
+    border: 1px solid #db391d;
+    border-radius: 999px;
+    box-shadow: 0 5px 10px #f9c6bd;
+}
+ h6.bworks-heading {
+    font-size: 20px;
+    line-height: 22px;
+}
+ .main {
+    display: none;
+}
+  
+  
+ #Attribution1, .image-attribution {
+    display: none;
+}
+  
+  
