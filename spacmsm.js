@@ -1,16 +1,4 @@
-$(document).ready(function()
-{
-   if($("#blogID").attr("blogID")!="3130731078515920927" )
-   if($("#blogID").attr("blogID")!="7870692384151747979" )
-   if($("#blogID").attr("blogID")!="1298618276865376142" )
-   if($("#blogID").attr("blogID")!="7794238371055954348" )
-   if($("#blogID").attr("blogID")!="7326879850855998940" )
-   if($("#blogID").attr("blogID")!="5857327135885470194" ) 
-   if($("#blogID").attr("blogID")!="" ) 
- {
-   window.location.href="https://www.facebook.com/Taaalam/";
- }
-    });
+
     
     // replaceText - Post Layouts - Contact from
 var s = "[full-width]";
