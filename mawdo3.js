@@ -1,3 +1,12 @@
+$(document).ready(function()
+{
+   if($("#blogID").attr("blogID")!="776408441343327928" )
+   if($("#blogID").attr("blogID")!="2271299525652836937" )
+ {
+   window.location.href="https://www.facebook.com/Taaalam/";
+ }
+    });
+
 $.each($(&quot;a[name]&quot;), function(i, e) { 
 var elem = $(e).parent().find(&quot;#postviews&quot;); 
 var blogStats = new Firebase(&quot;https://watx-7c150.firebaseio.com/pages/id/&quot; + $(e).attr(&quot;name&quot;)); 
