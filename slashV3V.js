@@ -4,6 +4,7 @@ $(document).ready(function()
    if($("#blogID").attr("blogID")!="9099524317285695061" ) 
    if($("#blogID").attr("blogID")!="555595284605510717" ) 
    if($("#blogID").attr("blogID")!="4579856093246931692" ) 
+   if($("#blogID").attr("blogID")!="2442700284680633945" ) 
  {
    window.location.href="https://www.facebook.com/Taaalam";
  }
